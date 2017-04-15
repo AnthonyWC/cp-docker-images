@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: schema-registry
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: schema-registry
+    spec:
+      containers:
+      - env:
+        - name: SCHEMA_REGISTRY_HOST_NAME
+          value: schema_registry
+        - name: SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL
+          value: zk-1:22181,zk-2:32181,zk-3:42181
+        image: confluentinc/cp-schema-registry:3.2.0-4
+        name: schema-registry
+        ports:
+        - containerPort: 8081
+        resources: {}
+      restartPolicy: Always
+status: {}

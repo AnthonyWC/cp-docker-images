@@ -1,0 +1,35 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: zk-3
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: zk-3
+    spec:
+      containers:
+      - env:
+        - name: ZOOKEEPER_TICK_TIME
+          value: "2000"
+        - name: ZOOKEEPER_CLIENT_PORT
+          value: "42181"
+        - name: ZOOKEEPER_INIT_LIMIT
+          value: "5"
+        - name: ZOOKEEPER_SERVER_ID
+          value: "3"
+        - name: ZOOKEEPER_SERVERS
+          value: zk-3:22888:23888;zk-3:32888:33888;zk-3:42888:43888
+        - name: ZOOKEEPER_SYNC_LIMIT
+          value: "2"
+        image: confluentinc/cp-zookeeper:3.2.0-4
+        name: zk-3
+        ports:
+        - containerPort: 42181
+        resources: {}
+      restartPolicy: Always
+status: {}

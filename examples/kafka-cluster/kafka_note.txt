@@ -1,0 +1,9 @@
+grep -rn 'zookeeper.connect' *
+kf-1/etc/kafka/consumer.properties:20:zookeeper.connect=127.0.0.1:2181
+kf-1/etc/kafka/consumer.properties:23:zookeeper.connection.timeout.ms=6000
+
+kf-1/etc/kafka/kafka.properties:4:zookeeper.connect=localhost:22181,localhost:32181,localhost:42181
+
+kf-1/etc/kafka/server.properties:119:zookeeper.connect=localhost:2181
+kf-1/etc/kafka/server.properties:122:zookeeper.connection.timeout.ms=6000
+kf-1/etc/kafka/server.properties:133:#confluent.metrics.reporter.zookeeper.connect=localhost:2181

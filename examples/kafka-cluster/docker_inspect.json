@@ -1,0 +1,236 @@
+[
+    {
+        "Id": "1e6ae6a3ec660e2cae00f83adedcd704623c8a7fc9798c7c1ef4ccef12c0964d",
+        "Created": "2017-04-14T13:59:46.088869554Z",
+        "Path": "/etc/confluent/docker/run",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 17398,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-04-14T13:59:46.380001812Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:b429fb049f2e805b2053c8ad2181c963c09e2e621d2dde8c02d6ba4685c2e25f",
+        "ResolvConfPath": "/var/lib/docker/containers/1e6ae6a3ec660e2cae00f83adedcd704623c8a7fc9798c7c1ef4ccef12c0964d/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/1e6ae6a3ec660e2cae00f83adedcd704623c8a7fc9798c7c1ef4ccef12c0964d/hostname",
+        "HostsPath": "/var/lib/docker/containers/1e6ae6a3ec660e2cae00f83adedcd704623c8a7fc9798c7c1ef4ccef12c0964d/hosts",
+        "LogPath": "/var/lib/docker/containers/1e6ae6a3ec660e2cae00f83adedcd704623c8a7fc9798c7c1ef4ccef12c0964d/1e6ae6a3ec660e2cae00f83adedcd704623c8a7fc9798c7c1ef4ccef12c0964d-json.log",
+        "Name": "/kafkacluster_kafka-1_1",
+        "RestartCount": 0,
+        "Driver": "overlay",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/antho/git/cp-docker-images/examples/kafka-cluster/kf-1/etc/kafka:/etc/kafka:rw",
+                "/home/antho/git/cp-docker-images/examples/kafka-cluster/kf-1/var/lib/kafka/data:/var/lib/kafka/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "host",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": -1,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Name": "overlay",
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay/b046c09d1dc1467794bf9d5fe03221606dc2d74e138966bcfba3c3abe53dea3a/root",
+                "MergedDir": "/var/lib/docker/overlay/2bc6dd98eb81b290f721625a6cd3dc26412b923d3f704e21e1d942efc5b66447/merged",
+                "UpperDir": "/var/lib/docker/overlay/2bc6dd98eb81b290f721625a6cd3dc26412b923d3f704e21e1d942efc5b66447/upper",
+                "WorkDir": "/var/lib/docker/overlay/2bc6dd98eb81b290f721625a6cd3dc26412b923d3f704e21e1d942efc5b66447/work"
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/antho/git/cp-docker-images/examples/kafka-cluster/kf-1/etc/kafka",
+                "Destination": "/etc/kafka",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/antho/git/cp-docker-images/examples/kafka-cluster/kf-1/var/lib/kafka/data",
+                "Destination": "/var/lib/kafka/data",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "c7aec81f17c0a25cb07c29b080c4fc6b966250845e937a0581c26f267bb0f531",
+                "Source": "/var/lib/docker/volumes/c7aec81f17c0a25cb07c29b080c4fc6b966250845e937a0581c26f267bb0f531/_data",
+                "Destination": "/etc/kafka/secrets",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "alto",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "9092/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:19092",
+                "KAFKA_ZOOKEEPER_CONNECT=localhost:22181,localhost:32181,localhost:42181",
+                "KAFKA_BROKER_ID=1",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "APT_ALLOW_UNAUTHENTICATED=false",
+                "PYTHON_VERSION=2.7.9-1",
+                "PYTHON_PIP_VERSION=8.1.2",
+                "SCALA_VERSION=2.11",
+                "CONFLUENT_MAJOR_VERSION=3",
+                "CONFLUENT_MINOR_VERSION=2",
+                "CONFLUENT_PATCH_VERSION=0",
+                "CONFLUENT_VERSION=3.2.0",
+                "CONFLUENT_DEB_VERSION=1",
+                "KAFKA_VERSION=0.10.2.0",
+                "ZULU_OPENJDK_VERSION=8=8.17.0.3",
+                "LANG=C.UTF-8",
+                "COMPONENT=kafka"
+            ],
+            "Cmd": [
+                "/etc/confluent/docker/run"
+            ],
+            "ArgsEscaped": true,
+            "Image": "confluentinc/cp-kafka:latest",
+            "Volumes": {
+                "/etc/kafka": {},
+                "/etc/kafka/secrets": {},
+                "/var/lib/kafka/data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "863893868c1bc051e48f2d619a4e34d4b0d82e96bd5bab89347cdae47862a004",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "kafkacluster",
+                "com.docker.compose.service": "kafka-1",
+                "com.docker.compose.version": "1.12.0",
+                "io.confluent.docker": "true",
+                "io.confluent.docker.build.number": "4",
+                "io.confluent.docker.git.id": "5fb9d48"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "260fcbd0fb3b20d5a02fc662ed98d1c15b03e6271eddf6e33a1e985d9e17b03a",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/default",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "host": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "bbe47568decea587ca3bf474fce6944fc2bb18fa432f061f9bb64894cf3aa8e8",
+                    "EndpointID": "801134cf98f96c560ed47069838bab8a7808e2126b7a0f91f8b82598845b5250",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": ""
+                }
+            }
+        }
+    }
+]

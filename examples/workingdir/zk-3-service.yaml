@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: zk-3
+  name: zk-3
+spec:
+  ports:
+  - name: "42181"
+    port: 42181
+    targetPort: 42181
+  selector:
+    io.kompose.service: zk-3
+status:
+  loadBalancer: {}
