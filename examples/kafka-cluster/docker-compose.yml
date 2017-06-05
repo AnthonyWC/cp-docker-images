@@ -13,9 +13,14 @@ services:
       ZOOKEEPER_SYNC_LIMIT: 2
       ZOOKEEPER_SERVERS: localhost:22888:23888;localhost:32888:33888;localhost:42888:43888
     network_mode: host
+<<<<<<< HEAD
     volumes:
       - ./zk-1/var/lib/zookeeper/data:/var/lib/zookeeper/data
       - ./zk-1/var/lib/zookeeper/log/version-2/:/var/lib/zookeeper/log/version-2/
+=======
+    extra_hosts:
+      - "moby:127.0.0.1"
+>>>>>>> e56e655e815302dde7fd234e530c3350fe1997cb
 
   zookeeper-2:
     image: confluentinc/cp-zookeeper:latest
@@ -27,9 +32,14 @@ services:
       ZOOKEEPER_SYNC_LIMIT: 2
       ZOOKEEPER_SERVERS: localhost:22888:23888;localhost:32888:33888;localhost:42888:43888
     network_mode: host
+<<<<<<< HEAD
     volumes:
       - ./zk-2/var/lib/zookeeper/data:/var/lib/zookeeper/data
       - ./zk-2/var/lib/zookeeper/log/version-2/:/var/lib/zookeeper/log/version-2/
+=======
+    extra_hosts:
+      - "moby:127.0.0.1"
+>>>>>>> e56e655e815302dde7fd234e530c3350fe1997cb
 
   zookeeper-3:
     image: confluentinc/cp-zookeeper:latest
@@ -41,9 +51,14 @@ services:
       ZOOKEEPER_SYNC_LIMIT: 2
       ZOOKEEPER_SERVERS: localhost:22888:23888;localhost:32888:33888;localhost:42888:43888
     network_mode: host
+<<<<<<< HEAD
     volumes:
       - ./zk-3/var/lib/zookeeper/data:/var/lib/zookeeper/data
       - ./zk-3/var/lib/zookeeper/log/version-2/:/var/lib/zookeeper/log/version-2/
+=======
+    extra_hosts:
+      - "moby:127.0.0.1"
+>>>>>>> e56e655e815302dde7fd234e530c3350fe1997cb
 
   kafka-1:
     image: confluentinc/cp-kafka:latest
@@ -56,9 +71,14 @@ services:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: localhost:22181,localhost:32181,localhost:42181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:19092
+<<<<<<< HEAD
     volumes:
       - ./kf-1/etc/kafka:/etc/kafka
       - ./kf-1/var/lib/kafka/data:/var/lib/kafka/data
+=======
+    extra_hosts:
+      - "moby:127.0.0.1"
+>>>>>>> e56e655e815302dde7fd234e530c3350fe1997cb
 
   kafka-2:
     image: confluentinc/cp-kafka:latest
@@ -71,9 +91,14 @@ services:
       KAFKA_BROKER_ID: 2
       KAFKA_ZOOKEEPER_CONNECT: localhost:22181,localhost:32181,localhost:42181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:29092
+<<<<<<< HEAD
     volumes:
       - ./kf-2/etc/kafka:/etc/kafka
       - ./kf-2/var/lib/kafka/data:/var/lib/kafka/data
+=======
+    extra_hosts:
+      - "moby:127.0.0.1"
+>>>>>>> e56e655e815302dde7fd234e530c3350fe1997cb
 
   kafka-3:
     image: confluentinc/cp-kafka:latest
@@ -86,6 +111,11 @@ services:
       KAFKA_BROKER_ID: 3
       KAFKA_ZOOKEEPER_CONNECT: localhost:22181,localhost:32181,localhost:42181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:39092
+<<<<<<< HEAD
     volumes:
       - ./kf-3/etc/kafka:/etc/kafka
       - ./kf-3/var/lib/kafka/data:/var/lib/kafka/data
+=======
+    extra_hosts:
+      - "moby:127.0.0.1"
+>>>>>>> e56e655e815302dde7fd234e530c3350fe1997cb
